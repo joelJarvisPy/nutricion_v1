@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Boostrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="form_wrapper">
+        <div class="form_container">
+            <div class="title_container">
+                <h2>Responsive Registration Form</h2>
+            </div>
+            <div class="row clearfix">
+                <div class="">
+                    <form id='register-form' autocomplete="off">
+                        <div class="row clearfix">
+                            <div class="col_half">
+                                <div class="input_field">
+                                    <span>
+                                        <i aria-hidden="true" class="fa fa-user"></i>
+                                    </span>
+                                    <input type="text" name="name" placeholder="First Name" />
+                                </div>
+                            </div>
+                            <div class="col_half">
+                                <div class="input_field">
+                                    <span>
+                                        <i aria-hidden="true" class="fa fa-user"></i>
+                                    </span>
+                                    <input type="text" name="name" placeholder="Last Name" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input_field">
+                            <span>
+                                <i aria-hidden="true" class="fa fa-envelope"></i>
+                            </span>
+                            <input type="email" name="email" placeholder="Email" required />
+                        </div>
+                        <div class="input_field">
+                            <span><i aria-hidden="true" class="fa fa-lock">
+                                </i>
+                            </span>
+                            <input type="password" name="password" placeholder="Password" required />
+                        </div>
+                        <div class="input_field">
+                            <span>
+                                <i aria-hidden="true" class="fa fa-lock"></i>
+                            </span>
+                            <input type="password" name="password" placeholder="Re-type Password" required />
+                        </div>
+    
+                        <div class="input_field radio_option">
+                            <span class='radio_icon'>
+                                <i class="fa fa-venus-mars" aria-hidden="true"></i>
+                            </span>
+                            <div class='radio_group'>
+                                <input type="radio" name="gender" id="gender-m" checked="true">
+                                <label for="gender-m">Male</label>
+    
+                                <input type="radio" name="gender" id="gender-f">
+                                <label for="gender-f">Female</label>
+                            </div>
+                        </div>
+    
+                        <div class="input_field select_option">
+                            <span><i id='country-icon' aria-hidden="true" class="fa fa-globe"></i>
+                            </span>
+                            <input name='country' type="text" id="country-list" list="country-datalist" placeholder='Country of Origin' autocomplete="off">
+                            <datalist id="country-datalist" autocomplete="off">
+                            </datalist>
+                            <div id='country-error' class=''></div>
+                            <!--div class="select_arrow"></div-->
+                        </div>
+                        <!--					<div class="input_field checkbox_option">
+                            <input type="checkbox" id="cb1">
+                            <label for="cb1">I agree with terms and conditions</label>
+                        </div>
+                        <div class="input_field checkbox_option">
+                            <input type="checkbox" id="cb2">
+                            <label for="cb2">I want to receive the newsletter</label>
+                        </div>
+                        <button id='check-data' class='button'>
+                            Check Data
+                        </button>
+    --> <input id='submit-data' class="button" type="submit" value="Register" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="credit">Developed by <a href="http://www.designtheway.com" target="_blank">Design the way</a></p>
+
+    <!-- JS -->
+    <script src="/js/index.js"></script>
+</body>
+</html>
