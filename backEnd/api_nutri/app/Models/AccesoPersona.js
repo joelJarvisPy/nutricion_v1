@@ -1,6 +1,7 @@
 'use strict'
 
 /** @type {typeof import('@adonisjs/lucid/src/Lucid/Model')} */
+const Hash = use('Hash')
 const Model = use('Model')
 
 class AccesoPersona extends Model {
